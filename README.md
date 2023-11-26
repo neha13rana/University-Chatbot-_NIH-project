@@ -46,6 +46,8 @@ Fill all the details to maintain the users history.
 **5) Mail verification link :** 
 Once you Sign Up to your account you will get a link for the verification on your registered mail id by confirming the link you will be able to sigin to this page. (This Verification link is only open through your pc's mail because this is a web application and done on a local host.) 
 ![image](https://github.com/neha13rana/New-India-Hackathon-Currently-working/assets/121093178/b0aa48a6-3dc1-4dc5-9258-1b29d5558550)
+![image](https://github.com/neha13rana/University_Chatbot-SSIP-NIH-2023-/assets/121093178/03d271f7-5427-43e4-8e59-83d7335199e4)
+
    
 **6) Thankyou main from our site :** 
 A Greetings by our robot.
