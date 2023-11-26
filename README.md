@@ -70,10 +70,12 @@ The user can feed us the feedback also by the review so that we know what is the
 
 
 Contributors :
+- [neha13rana](https://github.com/neha13rana).
 - [Dhruviii04](https://github.com/Dhruviii04)
 - [evapatel1654](https://github.com/evapatel1654)
 - [Ashu-p07](https://github.com/Ashu-p07)
-- [neha13rana](https://github.com/neha13rana).
+- [Krish-P03](https://github.com/Krish-P03)
+- [Krinadharsandia](https://github.com/Krinadharsandia)
 
 
 
