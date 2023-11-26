@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-POWERED UNIVERSITY CHATBOT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('static/pic3.jpeg') center/cover no-repeat; 
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.7);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            text-align: center;
+            border: 2px solid #fff; 
+            border-radius: 20px; 
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.4); 
+            background: linear-gradient(to right, #001F3F, #000000); 
+            position: relative;
+            z-index: 1;
+            transition: background-color 0.3s, transform 0.3s; 
+            transform-origin: center bottom;
+        }
+        
+
+        .container.signup-active {
+            background: #485460; 
+            transform: scale(1.02);
+        }
+
+        .container.signin-active {
+            background: #485460; 
+            transform: scale(1.02); 
+        }
+
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .alert-success {
+            background-color: #27ae60;
+            border: 1px solid #2ecc71;
+        }
+
+        .alert-danger {
+            background-color: #e74c3c;
+            border: 1px solid #c0392b;
+        }
+        h3 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #FFFFFF;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+        }
+        
+        h3:hover, button:hover {
+            text-shadow: 4px 4px 6px rgba(255, 0, 255, 0.5); 
+        } 
+
+        h4 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #ecf0f1;
+        }
+
+
+        button {
+            padding: 15px 30px;
+            color: #000; 
+            background-color: #f1c40f; 
+            text-decoration: none;
+            border: 2px solid #fff;
+            border-radius: 30px; 
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+            transform-origin: center bottom;
+        }
+
+        button.signup:hover {
+            background-color: #485460; 
+            transform: scale(1.05); 
+        }
+
+        button.signin:hover {
+            background-color: #485460; 
+            transform: scale(1.05);
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+       
+        .fa-icon {
+            margin-right: 10px; 
+        }
+
+        .icon-btn {
+            display: inline-block;
+            padding: 8px 20px;
+            border: 2px solid #fff; 
+            border-radius: 30px; 
+        }
+
+       
+    </style>
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <div class="overlay">
+        {% for message in messages %}
+        <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+            <strong class="fa-icon"><i class="fas fa-info-circle"></i></strong> {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        {% endfor %}
+
+        <div class="container" id="main-container">
+            <h3><i class="fas fa-graduation-cap fa-icon"></i> WELCOME TO AI-POWERED UNIVERSITY CHATBOT!</h3>
+
+            {% if user.is_authenticated %}
+            <h3><i class="fas fa-user fa-icon"></i> Hello {{fname}}!</h3>
+            <h4>You're successfully logged in.</h4>
+            <button type="submit" class="icon-btn"><a href="/signout"><i class="fas fa-sign-out-alt fa-icon"></i>  Sign Out</a></button>
+            {% else %}
+            <button type="submit" class="icon-btn signup"><a href="/signup"><i class="fas fa-user-plus fa-icon"></i> Sign Up</a></button>
+            <br/>
+            <br/>
+            <button type="submit" class="icon-btn signin"><a href="/signin"><i class="fas fa-sign-in-alt fa-icon"></i> Sign In</a></button>
+            {% endif %}
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+

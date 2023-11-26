@@ -1,0 +1,8 @@
+Response,Sentiment Label
+good,1
+no so good,1
+bad,-1
+so so,0
+ok ,1
+fine,1
+very bad,-1

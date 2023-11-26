@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+   @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+* {
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+*{ margin: 0; padding: 0;}
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+html {
+  font-size: 6.25vmax;
+}
+@media (max-width: 992px) {
+  html {
+    font-size: 60px;
+  }
+}
+
+.cd__main {
+  min-height: 100vh;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 0.24rem;
+  font-family: "Space Grotesk", sans-serif;
+  background-image: radial-gradient(farthest-side, rgba(33, 59, 110, 0.686) 90%, #fff0), radial-gradient(farthest-side,rgba(33, 59, 110, 0.686) 90%, #fff0), radial-gradient(circle at 0 0, #071460, #494c77) !important;
+  background-size: 8rem 8rem, 6rem 6rem, auto;
+  background-position: 30% 10%, 80% 90%, 0;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(50px);
+}
+
+.wrapper {
+  width: 6rem;
+  padding: 0.3rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  border-radius: 0.25rem;
+  box-shadow: 10px 10px 30px rgba(76, 130, 255, 0.962);
+  background-color: rgba(10, 15, 83, 0.556)
+  
+}
+.wrapper .title {
+  font-weight: bold;
+  font-size: 0.36rem;
+}
+.wrapper .content {
+  line-height: 1.6;
+  color: #9f9f9f;
+}
+
+.rate-box {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.1rem;
+}
+.rate-box input {
+  display: none;
+}
+.rate-box input:hover ~ .star:before {
+  color: rgba(246, 203, 74, 0.568);
+}
+.rate-box input:active + .star:before {
+  transform: scale(0.9);
+}
+.rate-box input:checked ~ .star:before {
+  color: #ffbf00;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3), -3px -3px 8px rgba(255, 255, 255, 0.8);
+}
+.rate-box .star:before {
+  content: "★";
+  display: inline-block;
+  font-family: "Potta One", cursive;
+  font-size: 0.6rem;
+  cursor: pointer;
+  color: #0000;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+  background-color: #aaa;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 0.3s;
+}
+
+
+textarea {
+  border: none;
+  resize: none;
+  width: 100%;
+  padding: 0.2rem;
+  color: inherit;
+  font-family: inherit;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.3), inset -2px -2px 8px rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+textarea::placeholder {
+  color: #000000;
+}
+textarea:focus {
+  outline-color: #00d0ff;
+}
+
+.submit-btn {
+  padding: 0.2rem 0.5rem;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3), -3px -3px 8px rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: rgba(255, 204, 51, 0.8);
+  transition: all 0.2s;
+}
+.submit-btn:active {
+  transform: translate(2px, 2px);
+}
+
+
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+    
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-smoothing: antialiased;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
+  background: #eee;
+}
+.cd__intro{
+   padding: 60px 30px;
+   margin-bottom: 15px;
+        flex-direction: column;
+
+}
+.cd__intro,
+.cd__credit{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #333;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.cd__intro h1 {
+   font-size: 18pt;
+   padding-bottom: 15px;
+
+}
+.cd__intro p{
+   font-size: 14px;
+}
+
+.cd__action{
+   text-align: center;
+   display: block;
+   margin-top: 20px;
+}
+
+.cd__action a.cd__btn {
+  text-decoration: none;
+  color: #666;
+   border: 2px solid #666;
+   padding: 10px 15px;
+   display: inline-block;
+   margin-left: 5px;
+}
+.cd__action a.cd__btn:hover{
+   background: #666;
+   color: #fff;
+    transition: .3s;
+-webkit-transition: .3s;
+}
+.cd__action .cd__btn:before{
+  font-family: FontAwesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+.down:before{content: "\f019"}
+.back:before{content:"\f112"}
+
+.cd__credit{
+    padding: 12px;
+    font-size: 9pt;
+    margin-top: 40px;
+
+}
+.cd__credit span:before{
+   font-family: FontAwesome;
+   color: #e41b17;
+   content: "\f004";
+
+
+}
+.cd__credit a{
+   color: #333;
+   text-decoration: none;
+}
+.cd__credit a:hover{
+   color: #1DBF73; 
+}
+.cd__credit a:hover:after{
+    font-family: FontAwesome;
+    content: "\f08e";
+    font-size: 9pt;
+    position: absolute;
+    margin: 3px;
+}
+.cd__main{
+  background: rgb(11, 14, 66)106, 106);
+  padding: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.cd__main{
+    display: flex;
+    width: 100%;
+}
+
+</style>
+
+
+
+
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="CodeHim">
+      <title> Star Ratings Example </title>
+     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+   </head>
+   <body>
+     
+      <main class="cd__main">
+         
+         <div class="wrapper"> 
+  <div class="title">Rate your experience</div>
+  <div class="content">Share your thoughts and feedback on your experience with our chatbot. Feel free to comment on any specific aspects.<br> We highly value your feedback!</div>
+  <div class="rate-box">
+   <input type="radio" name="star" id="star0"/>
+   <label class="star" for="star0"></label>
+   <input type="radio" name="star" id="star1"/>
+   <label class="star" for="star1"></label>
+   <input type="radio" name="star" id="star2" checked="checked"/>
+   <label class="star" for="star2"></label>
+   <input type="radio" name="star" id="star3"/>
+   <label class="star" for="star3"></label>
+   <input type="radio" name="star" id="star4"/>
+   <label class="star" for="star4"></label>
+ </div>
+ 
+  <textarea cols="30" rows="6" placeholder="Write your experience!"></textarea>
+  <div class="submit-btn">Send</div>
+</div>
+      </main>
+   </body>
+</html>
