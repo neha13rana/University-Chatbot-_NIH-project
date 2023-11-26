@@ -1,7 +1,9 @@
 # An AI Powered Chatbot 
 
 I am going to work on a project in a group of 6 members which is for New India Hackathon 2023 and in this project we are going to develop an AI-Powered Chatbot for Technical Educational Department.Also i am currently working on this project to Develop a Web interface(project) using the ML,DL,NLP and other technologies. 
-An Educational Chatbot is a web application developed with the *Django framework. Its primary purpose is to reduce the cost of the staff. To provide a new technologies to the student also to the university. Admin can see the performance of the chatbot through the generated graph by the users feedback also we are add a graph performance when the chatbot detected the AI Content it is probably use by the other robot so we are inform user to verify your self by captcha or other technology.
+An Educational Chatbot is a web application developed with the *Django framework.Its primary purpose is to reduce the cost of the staff. To provide new technologies to the students and also to the university. Admin can see the performance of the chatbot through the generated graph by the user's feedback also we add a graph performance when the chatbot detects the AI Content it is probably used by the other robot so we inform the user to verify themselves by captcha or other technology.
+In this project, we developed a college-specific chatbot system that can be tailored to the education domain. By adding this chatbot system to the college website,
+it will increase user interaction because it is domain-specific and responds to user inquiries accurately.
 
 Any university use this chatbot by providing the proper database in the same format of our json file and they can use this for their purpose. here we are done a survey at nirma university and create a database by our self.
 
@@ -18,13 +20,10 @@ The Technical Education Department faces challenges in effectively engaging with
 The main goal of the project is to create an AI-powered chatbot specifically designed for the Technical Education Department, with an emphasis on improving efficiency, datadriven decision-making, and user assistance. This chatbot will be available around-the clock and respond to a wide range of user inquiries in a fast and accurate manner. Routine chores can be automated to save staff effort and perhaps save money. Additionally, it gathers insightful data that helps the agency make defensible judgments. The integration of active feedback and user-centric design enhances user pleasure, while the chatbot’s scalability establishes it as a role model for comparable establishments. To put it briefly, the project’s goal is to provide a scalable, user-friendly chatbot that will enhance the department’s instructional program and overall operational effectiveness.
 
 **Conclusion :**
-
-In this project, we developed a college-specific chatbot system that can be tailored to the education domain. By adding this chatbot system to the college website,
-it will increase user interaction because it is domain-specific and responds to user inquiries accurately.
+In this project, we developed a college-specific chatbot system that can be tailored to the education domain. Adding this chatbot system to the college website, will increase user interaction because it is domain-specific and responds to user inquiries accurately. 
 
 
-This Project is done on a local host. We are also trying to make this project very efficient for the users the perspective also. Trying to develop a new and advanced feature in it to make the improve our site. you can see the glimps of created website. 
-We are done this Project using the technologies like Python, Machine Learning and Deep learning also another advanced technologies the framework is created using django and including html,css,javascript,ajax and bootstrap.
+This Project is done on a local host. We are also trying to make this project very efficient from the user's perspective. Trying to develop a new and advanced feature in it to improve our site. you can see a glimpse of the created website. We are doing this Project using technologies like Python, Machine Learning, NLP, Deep learning also advanced technology the framework is created using Django and includes HTML, CSS, JavaScript, Ajax, and Bootstrap.
 
 **here is the working site of our project :**
 **1) How to run a server :**
