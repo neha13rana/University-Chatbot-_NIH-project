@@ -73,7 +73,7 @@ Contributors :
 - [Dhruviii04](https://github.com/Dhruviii04)
 - [evapatel1654](https://github.com/evapatel1654)
 - [Ashu-p07](https://github.com/Ashu-p07)
-- [Krish-P03](https://github.com/Krish-P03)
+- [neha13rana](https://github.com/neha13rana).
 
 
 
