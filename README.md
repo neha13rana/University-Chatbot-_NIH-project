@@ -69,3 +69,11 @@ The user can feed us the feedback also by the review so that we know what is the
 ![image](https://github.com/neha13rana/New-India-Hackathon-Currently-working/assets/121093178/7e526ad9-0ea3-4c9a-9b42-b434603e77b6)
 
 
+Contributors :
+- [Dhruviii04](https://github.com/Dhruviii04)
+- [evapatel1654](https://github.com/evapatel1654)
+- [Ashu-p07](https://github.com/Ashu-p07)
+- [Krish-P03](https://github.com/Krish-P03)
+
+
+
