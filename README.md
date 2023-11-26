@@ -1,4 +1,4 @@
-# New-India-Hackathon-Currently-working 
+# An AI Powered Chatbot 
 
 I am going to work on a project in a group of 6 members which is for New India Hackathon 2023 and in this project we are going to develop an AI-Powered Chatbot for Technical Educational Department.Also i am currently working on this project to Develop a Web interface(project) using the ML,DL,NLP and other technologies. 
 An Educational Chatbot is a web application developed with the *Django framework. Its primary purpose is to reduce the cost of the staff. To provide a new technologies to the student also to the university. Admin can see the performance of the chatbot through the generated graph by the users feedback also we are add a graph performance when the chatbot detected the AI Content it is probably use by the other robot so we are inform user to verify your self by capcha or other technology.
