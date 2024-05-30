@@ -2,6 +2,7 @@
 
 
 Dataset1 : https://huggingface.co/datasets/Neha13/Chatbot_nirma_dataset2
+
 Dataset2 : https://huggingface.co/datasets/Neha13/Chatbot_Nirma_Dataset
 
 An Educational Chatbot is a web application developed with the Django framework.Its primary purpose is to reduce the cost of the staff. To provide new technologies to the students and also to the university. Admin can see the performance of the chatbot through the generated graph by the user's feedback also we add a graph performance when the chatbot detects the AI Content it is probably used by the other robot so we inform the user to verify themselves by captcha or other technology.
